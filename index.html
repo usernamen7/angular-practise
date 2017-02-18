@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="ContactApp">
+<html ng-app>
 
 <head>
     <meta charset="utf-8">
@@ -49,14 +49,14 @@
 
                     <div class="form-group col-lg-12">
                         <label>Telephone number:</label>
-                        <input type="number" name="" class="form-control" id="" value="" ng-model="phone" placeholder="+380XXXXXXXX">
+                        <input type="text" name="" class="form-control" id="" value="" ng-model="phone" placeholder="+380XXXXXXXX">
                     </div>
 
                     <div class="col-lg-12">
                         <div class="form-group">
                             <label>Birth day:</label>
                             <div class='input-group date' id='datetimepicker2'>
-                                <input type='date' class="form-control" ng-model="bday" placeholder="XX.XX.XXXX" />
+                                <input type='text' class="form-control" ng-model="bday" placeholder="XX.XX.XXXX" />
                                 <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-calendar"></span>
                                 </span>
@@ -84,7 +84,7 @@
 
                 <div class="col-md-8">
                     <h3 class="dark-grey">Contact list</h3>
-                    <table class="table table-striped table-condensed" ng-controller="ContactAppController">
+                    <table class="table table-striped table-condensed">
                         <thead>
                             <tr>
                                 <th>Name</th>
@@ -162,7 +162,7 @@
                     </table>
 
                     <h3 class="dark-grey">Birtday soon</h3>
-                    <table class="table table-striped table-condensed" ng-controller="ContactAppController">
+                    <table class="table table-striped table-condensed">
                         <thead>
                             <tr>
                                 <th>Name</th>
@@ -205,7 +205,6 @@
                     </table>
                 </div>
             </div>
-
 
         </section>
     </div>
